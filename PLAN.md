@@ -12,7 +12,6 @@
 - **Maps:** Google Maps Platform
 - **Payment:** SePay (Bank transfer automation)
 
-### Project Directory Structuree
 
 ```
 BenGo/
