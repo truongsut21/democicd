@@ -13,10 +13,10 @@ jobs:
       - name: Debug - Check Secrets
         run: |
           echo "=== Checking Secrets ==="
-          echo "VPS_HOST: ${{ secrets.VPS_HOST != '' && 'SET ✓' || 'NOT SET ✗' }}"
-          echo "VPS_USER: ${{ secrets.VPS_USER != '' && 'SET ✓' || 'NOT SET ✗' }}"
-          echo "VPS_PORT: ${{ secrets.VPS_PORT != '' && 'SET ✓' || 'NOT SET ✗' }}"
-          echo "VPS_SSH_KEY: ${{ secrets.VPS_SSH_KEY != '' && 'SET ✓' || 'NOT SET ✗' }}"
+          echo "VPS_HOST: ${{ secrets.VPS_HOST }}"
+          echo "VPS_USER: ${{ secrets.VPS_USER }}"
+          echo "VPS_PORT: ${{ secrets.VPS_PORT }}"
+          echo "VPS_SSH_KEY: ${{ secrets.VPS_SSH_KEY }}"
           echo "VPS_HOST value length: ${#VPS_HOST}"
           echo "VPS_SSH_KEY first 50 chars: ${VPS_SSH_KEY:0:50}"
         env:
